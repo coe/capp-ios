@@ -15,6 +15,10 @@
 		CE1313E91DC466FD00C06E5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1313E71DC466FD00C06E5B /* LaunchScreen.storyboard */; };
 		CE1313F41DC466FE00C06E5B /* CappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1313F31DC466FE00C06E5B /* CappTests.swift */; };
 		CE1313FF1DC466FE00C06E5B /* CappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1313FE1DC466FE00C06E5B /* CappUITests.swift */; };
+		CE1314101DC4676F00C06E5B /* MainNative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE13140E1DC4676F00C06E5B /* MainNative.cpp */; };
+		CE1314131DC469A600C06E5B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1314121DC469A600C06E5B /* libstdc++.tbd */; };
+		CE1314161DC46A0800C06E5B /* MainBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE1314151DC46A0800C06E5B /* MainBridge.mm */; };
+		D92A7C25CA5FC3347995C2A5 /* Pods_Capp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E2E0BB206C1C1A802A55B1 /* Pods_Capp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56E2E0BB206C1C1A802A55B1 /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC857E231CB91BB2F20EFA4 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
 		CE1313D81DC466FD00C06E5B /* Capp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1313DB1DC466FD00C06E5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1313DD1DC466FD00C06E5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,13 @@
 		CE1313FA1DC466FE00C06E5B /* CappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1313FE1DC466FE00C06E5B /* CappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappUITests.swift; sourceTree = "<group>"; };
 		CE1314001DC466FE00C06E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE13140D1DC4676E00C06E5B /* Capp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Capp-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE13140E1DC4676F00C06E5B /* MainNative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainNative.cpp; sourceTree = "<group>"; };
+		CE13140F1DC4676F00C06E5B /* MainNative.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainNative.hpp; sourceTree = "<group>"; };
+		CE1314121DC469A600C06E5B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CE1314141DC46A0800C06E5B /* MainBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBridge.h; sourceTree = "<group>"; };
+		CE1314151DC46A0800C06E5B /* MainBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainBridge.mm; sourceTree = "<group>"; };
+		F6B6D1BEE298D6114D704BA4 /* Pods-Capp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1314131DC469A600C06E5B /* libstdc++.tbd in Frameworks */,
+				D92A7C25CA5FC3347995C2A5 /* Pods_Capp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CBD81432F48120F3B3070ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6B6D1BEE298D6114D704BA4 /* Pods-Capp.debug.xcconfig */,
+				8EC857E231CB91BB2F20EFA4 /* Pods-Capp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE1313CF1DC466FD00C06E5B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				CE1313F21DC466FE00C06E5B /* CappTests */,
 				CE1313FD1DC466FE00C06E5B /* CappUITests */,
 				CE1313D91DC466FD00C06E5B /* Products */,
+				CE1314111DC469A500C06E5B /* Frameworks */,
+				2CBD81432F48120F3B3070ED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +125,8 @@
 		CE1313DA1DC466FD00C06E5B /* Capp */ = {
 			isa = PBXGroup;
 			children = (
+				CE13140D1DC4676E00C06E5B /* Capp-Bridging-Header.h */,
+				CE13140C1DC4674D00C06E5B /* Cpp */,
 				CE1313DB1DC466FD00C06E5B /* AppDelegate.swift */,
 				CE1313DD1DC466FD00C06E5B /* ViewController.swift */,
 				CE1313DF1DC466FD00C06E5B /* Main.storyboard */,
@@ -128,6 +156,34 @@
 			path = CappUITests;
 			sourceTree = "<group>";
 		};
+		CE13140C1DC4674D00C06E5B /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				CE13141A1DC4866B00C06E5B /* ios */,
+				CE13140E1DC4676F00C06E5B /* MainNative.cpp */,
+				CE13140F1DC4676F00C06E5B /* MainNative.hpp */,
+			);
+			name = Cpp;
+			sourceTree = "<group>";
+		};
+		CE1314111DC469A500C06E5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE1314121DC469A600C06E5B /* libstdc++.tbd */,
+				56E2E0BB206C1C1A802A55B1 /* Pods_Capp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE13141A1DC4866B00C06E5B /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				CE1314141DC46A0800C06E5B /* MainBridge.h */,
+				CE1314151DC46A0800C06E5B /* MainBridge.mm */,
+			);
+			name = ios;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE1314031DC466FE00C06E5B /* Build configuration list for PBXNativeTarget "Capp" */;
 			buildPhases = (
+				AFE807A722DAE46272F8DF18 /* Check Pods Manifest.lock */,
 				CE1313D41DC466FD00C06E5B /* Sources */,
 				CE1313D51DC466FD00C06E5B /* Frameworks */,
 				CE1313D61DC466FD00C06E5B /* Resources */,
+				993F10B408DFDD40F7EDF326 /* Embed Pods Frameworks */,
+				215D095D16CF3CA9A5B51A84 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +256,7 @@
 					CE1313D71DC466FD00C06E5B = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = J96677DK6N;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					CE1313EE1DC466FE00C06E5B = {
@@ -260,14 +320,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		215D095D16CF3CA9A5B51A84 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capp/Pods-Capp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		993F10B408DFDD40F7EDF326 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capp/Pods-Capp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE807A722DAE46272F8DF18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE1313D41DC466FD00C06E5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1314161DC46A0800C06E5B /* MainBridge.mm in Sources */,
 				CE1313DE1DC466FD00C06E5B /* ViewController.swift in Sources */,
 				CE1313DC1DC466FD00C06E5B /* AppDelegate.swift in Sources */,
 				CE1313E41DC466FD00C06E5B /* Capp.xcdatamodeld in Sources */,
+				CE1314101DC4676F00C06E5B /* MainNative.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,26 +527,33 @@
 		};
 		CE1314041DC466FE00C06E5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B6D1BEE298D6114D704BA4 /* Pods-Capp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = J96677DK6N;
 				INFOPLIST_FILE = Capp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.coe.Capp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Capp/Capp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		CE1314051DC466FE00C06E5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC857E231CB91BB2F20EFA4 /* Pods-Capp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = J96677DK6N;
 				INFOPLIST_FILE = Capp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.coe.Capp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Capp/Capp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -518,6 +635,7 @@
 				CE1314051DC466FE00C06E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1314061DC466FE00C06E5B /* Build configuration list for PBXNativeTarget "CappTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +644,7 @@
 				CE1314081DC466FE00C06E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE1314091DC466FE00C06E5B /* Build configuration list for PBXNativeTarget "CappUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +653,7 @@
 				CE13140B1DC466FE00C06E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
